@@ -53,7 +53,7 @@ export default {
   methods: {
     async getData () {
       try {
-        const response = await fetch('http://localhost:5000/api/dashbord-card')
+        const response = await fetch('https://xlr8-take-home.onrender.com/api/dashbord-card')
         if (!response.ok) {
           throw new Error('Network error')
         }

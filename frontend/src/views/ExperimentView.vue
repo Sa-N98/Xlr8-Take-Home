@@ -85,7 +85,7 @@ export default {
         console.log('Categories:', filledCategories)
         // Add backend logic here
         try {
-          const result = await fetch('http://localhost:5000/api/rank-brands', {
+          const result = await fetch('https://xlr8-take-home.onrender.com/api/rank-brands', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
