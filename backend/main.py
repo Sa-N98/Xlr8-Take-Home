@@ -11,7 +11,7 @@ current_dir = os.path.abspath(os.path.dirname(__file__))
 app = Flask(__name__)
 app_config(app)
 db.init_app(app)
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+CORS(app, origins=["https://xlr8-brand-ranker.onrender.com"])
 app.app_context().push()
 
 
