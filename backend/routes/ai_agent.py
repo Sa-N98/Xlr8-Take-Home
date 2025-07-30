@@ -11,7 +11,7 @@ from database.model import *
 
 def ai_bot_route(app):
     @app.route('/api/rank-brands', methods=['POST'])
-    @cross_origin(origin='http://localhost:8080')
+    @cross_origin(origin='https://xlr8-brand-ranker.onrender.com/')
     def rank_brands():
         data = request.get_json()
         brands = data.get('brands', [])

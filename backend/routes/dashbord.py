@@ -8,7 +8,7 @@ from flask import request
 
 def dashbord_cards(app):
     @app.route('/api/dashbord-card', methods=['GET'])
-    @cross_origin(origin='http://localhost:8080')
+    @cross_origin(origin='https://xlr8-brand-ranker.onrender.com/')
     def dashbord_cards():
         experiments = experiments_table.query.order_by(experiments_table.experiment_time.desc()).all()
         exp_data = {}
