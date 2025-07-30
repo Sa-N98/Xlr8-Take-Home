@@ -1,0 +1,9 @@
+Flask
+Flask-SQLAlchemy
+flask-cors
+requests
+langchain 
+langchain-community 
+openai 
+langchain_openai
+python-dotenv
